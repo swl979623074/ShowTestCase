@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="author" content="swl" />
+		<meta name="date" content="2016/10/8"/>
+		<meta name="keywords" content="UniSIMS Test"/>
+		<title>UniSIMS Test Collections</title>
+		<link rel="stylesheet" href="../css/home.css" />
+	</head>
+	<body>
+		<header>
+			<div><img src="../img/Logo.png"/></div>
+		</header>
+		<section>
+			<div id="navBox">
+				<details>
+					<summary>模块类型</summary>
+					<ul class="list" id='moduleList'></ul>
+				</details>
+			</div>
+			<div id="contentBox">
+				<div id="typeNav">
+					<div>
+						<span>type: </span>
+						<input name="type" type="radio" value="ALL" checked="true"/><label>All</label>
+						<input name="type" type="radio" value="PASS" /><label>Pass</label>
+						<input name="type" type="radio" value="ERROR" /><label>Error</label>
+						<input name="type" type="radio" value="ABORT" /><label>Abort</label>						
+						<button id='removeBtn'>Remove All</button>
+					</div>
+				</div>
+				<div id="content">
+					<table>
+						<thead>
+							<td>模块</td>
+							<td>方法</td>
+							<td>系统</td>
+							<td>平台</td>
+							<td>时间</td>
+							<td>状态</td>
+						</thead>
+						<tbody id="contentList"></tbody>
+					</table>
+				</div>
+				<div id="pageNav">
+					<!--<button>上一页</button><button>下一页</button>-->
+					<span>共<span id='num'></span>条</span>
+				</div>
+			</div>
+		</section>
+		
+		<script type="text/javascript" src="../js/jquery-1.11.0.js" ></script>
+		<script type="text/javascript" src="../js/setConfig.js" ></script>
+		<script type="text/javascript" src="../js/home.js" ></script>
+	</body>
+</html>
